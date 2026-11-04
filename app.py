@@ -21,7 +21,6 @@ st.write("Files available:", os.listdir())
 
 model = joblib.load("fake_news_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Website title
 st.title("Fake News Detection System")
