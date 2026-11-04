@@ -16,7 +16,11 @@ def clean_text(text):
     return text
 
 # Load trained model and vectorizer
+import os
+st.write("Files available:", os.listdir())
+
 model = joblib.load("fake_news_model.pkl")
+vectorizer = joblib.load("tfidf_vectorizer.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Website title
